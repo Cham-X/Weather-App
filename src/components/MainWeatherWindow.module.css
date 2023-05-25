@@ -1,0 +1,67 @@
+main {
+  position: relative;
+  width: 80vw;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title {
+  position: absolute;
+  color: #365a7a;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sunlightImage {
+  width: 4.5rem;
+}
+
+.todayWeather {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  min-height: 60%;
+}
+
+article {
+  flex-basis: 100%;
+}
+
+.todayWeatherContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.cityText {
+  font-weight: bolder;
+}
+
+.temperatureText {
+  color: #365a7a;
+}
+
+.cloud {
+  height: 13rem;
+}
+
+@media screen and (max-width:600px) {
+  .todayWeather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+  }
+
+}
